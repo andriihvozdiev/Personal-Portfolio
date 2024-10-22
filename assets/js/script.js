@@ -157,3 +157,39 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+// add skills list
+const skills = [
+  { name: "Android development", percentage: 95 },
+  { name: "iOS development", percentage: 90 },
+  { name: "Web Development", percentage: 80 },
+  { name: "Java", percentage: 95 },
+  { name: "Kotlin", percentage: 90 },
+  { name: "Swift", percentage: 80 },
+  { name: "Objective-C", percentage: 95 },
+  { name: "React Native", percentage: 85 },
+  { name: "Flutter", percentage: 60 },
+  { name: "React.js", percentage: 80 },
+  { name: "Vue.js", percentage: 70 },
+  { name: "HTML", percentage: 95 },
+  { name: "Javascript", percentage: 90 },
+  { name: "CSS", percentage: 90 }
+];
+
+const skillsList = document.getElementById('skills-list');
+
+skills.forEach(skill => {
+  const skillItem = `
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <h5 class="h5">${skill.name}</h5>
+        <data value="${skill.percentage}">${skill.percentage}%</data>
+      </div>
+      <div class="skill-progress-bg">
+        <div class="skill-progress-fill" style="width: ${skill.percentage}%;"></div>
+      </div>
+    </li>
+  `;
+  skillsList.innerHTML += skillItem;
+});
