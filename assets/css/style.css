@@ -829,6 +829,17 @@ main {
   line-height: 1.6;
 }
 
+.timeline-text-dot {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+.timeline-text-dot::before {
+  content: "•";
+  margin-right: 4px;
+}
+
 
 /**
  * skills 
