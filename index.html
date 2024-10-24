@@ -23,6 +23,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!--
+    - venobox
+  -->
+  <link rel="stylesheet" href="venobox/venobox.min.css" type="text/css" media="screen" />
+  
 </head>
 
 <body>
@@ -633,15 +639,15 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
               <button data-filter-btn>Mobile Development</button>
             </li>
 
             <li class="filter-item">
               <button data-filter-btn>Web development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
             </li>
 
           </ul>
@@ -665,10 +671,6 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
                 <button data-select-item>Mobile Development</button>
               </li>
 
@@ -676,6 +678,9 @@
                 <button data-select-item>Web development</button>
               </li>
 
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
             </ul>
 
           </div>
@@ -737,14 +742,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="mobile development">
-              <a href="#">
-
+              <a href="./projects/petropulse.html" class="venobox" title="Project Details" data-gall="portfolioDetailsGallery" data-vbtype="iframe">
+              
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-petropulse.png" alt="petropulse" loading="lazy">
+                  <img src="./assets/images/projects/petropulse.png" alt="petropulse" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">PetroPulse</h3>
@@ -809,14 +814,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="mobile development">
-              <a href="#">
-
+              <a href="./projects/scape.html" class="venobox" title="Project Details" data-gall="portfolioDetailsGallery" data-vbtype="iframe">
+              
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-8.jpg" alt="Scape" loading="lazy">
+                  <img src="./assets/images/projects/scape.png" alt="Scape" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Scape</h3>
@@ -1094,9 +1099,10 @@
   </main>
 
 
-
-
-
+  <!--
+    - venobox
+  -->
+  <script type="text/javascript" src="venobox/venobox.min.js"></script>
 
   <!--
     - custom js link
@@ -1108,6 +1114,7 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
 
 </body>
 

@@ -196,3 +196,7 @@ skills.forEach(skill => {
   `;
   skillsList.innerHTML += skillItem;
 });
+
+new VenoBox({
+  selector: ".venobox"
+});
