@@ -25,6 +25,7 @@ const overlay = document.querySelector("[data-overlay]");
 // modal variable
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
+const modalDate = document.querySelector("[data-modal-date]");
 const modalText = document.querySelector("[data-modal-text]");
 
 // modal toggle function
@@ -42,6 +43,7 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
     modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
     modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+    modalDate.innerHTML = this.querySelector("[data-testimonials-text]").getAttribute("data-date");
 
     testimonialsModalFunc();
 
@@ -172,6 +174,7 @@ const skills = [
   { name: "Flutter", percentage: 60 },
   { name: "React.js", percentage: 80 },
   { name: "Vue.js", percentage: 70 },
+  { name: "Python", percentage: 50 },
   { name: "HTML", percentage: 95 },
   { name: "Javascript", percentage: 90 },
   { name: "CSS", percentage: 90 }
